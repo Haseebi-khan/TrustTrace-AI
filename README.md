@@ -218,12 +218,14 @@ more records to the audit ledger.
 
 ### Dashboard screenshots
 
-The simulator shows the bundled deterministic scenarios and the Public Data
-Lab controls for bounded, public-sample evaluation:
+These current screenshots show the deployed security overview, simulator,
+Public Data Lab, and signed audit ledger:
 
 ![TrustTrace scenario simulator and Public Data Lab](docs/dashboard-scenarios.png)
 
-![TrustTrace Public Data Lab results and audit ledger](docs/dashboard-data-lab.png)
+![TrustTrace Public Data Lab controls and sample evaluation](docs/dashboard-data-lab.png)
+
+![TrustTrace signed audit ledger and verified event](docs/dashboard-audit.png)
 
 ## Use the API
 
@@ -471,14 +473,13 @@ the MIT license.
 
 - [Backend setup and development](backend/README.md)
 - [Dashboard setup](frontend/README.md)
-- [Presentation video](docs/PresentationVideo.mp4) · [ZIP download](docs/PresentationVideo.zip)
 - [Nemotron model license notice](LICENSES/NVIDIA-NEMOTRON-NOTICE.md)
 - [Latest GitHub release](https://github.com/Haseebi-khan/TrustTrace-AI/releases/latest)
 - [Presentation (PDF)](docs/presentation.pdf) · [HTML slides](docs/presentation.html)
 - [Project site](docs/index.html) (GitHub Pages: set Pages source to `/docs`)
 
-The videos are independent project demonstrations and are not sponsored or
-endorsed by NVIDIA or Nebius.
+This is an independent project and is not sponsored or endorsed by NVIDIA or
+Nebius.
 
 Team: Haseeb Khan (ML Engineer) and Abu Baker (Frontend Developer).
 
