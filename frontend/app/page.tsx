@@ -152,9 +152,7 @@ function judgeBadge(health: ApiHealth | null): string {
   if (health.layers.llm_judge === "disabled") return "OFFLINE POLICY MODE";
   if (health.layers.llm_judge !== "ready") return "JUDGE NOT READY";
   if (health.judge_provider.includes("Nebius")) {
-    return health.judge_fallback_configured
-      ? "NEBIUS + GEMINI FALLBACK"
-      : "NEBIUS CONFIGURED";
+    return "NEBIUS CONFIGURED";
   }
   if (health.judge_provider.includes("Gemini")) return "GEMINI CONFIGURED";
   return "JUDGE CONFIGURED";
@@ -412,7 +410,7 @@ export default function Dashboard() {
         </nav>
         <div className="sidebar-bottom">
           <div className="system-card">
-            <span className="system-kicker"><span className="system-indicator" /> DEMO ENVIRONMENT</span>
+            <span className="system-kicker"><span className="system-indicator" /> SANDBOX ENVIRONMENT</span>
             <p>Policy checks run before sandbox tools.</p>
           </div>
           <div className="owner"><span>TRUSTTRACE AI</span><span>AGENT SECURITY WORKSPACE</span></div>
