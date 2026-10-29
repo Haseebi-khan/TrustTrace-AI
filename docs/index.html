@@ -39,6 +39,13 @@ pre.mermaid{background:transparent;text-align:center;padding:0}pre{background:va
 <div class="card"><div class="n">8</div>deterministic scenarios</div></div>
 <p class="mut">A REVIEW flags a call for human attention; it is not a block. Results are from team-authored regression scenarios, not a general security efficacy claim.</p>
 
+<h2>Live model integration</h2>
+<p>On 2026-10-30, a harmless synthetic request to the deployed API returned a
+valid structured result from NVIDIA Nemotron 3 Nano through Nebius Token
+Factory. Its audit trace confirmed the model ID and successful judge layer;
+Gemini fallback was not used. This is one verified request, not a benchmark or
+an availability guarantee. Provider errors fail closed.</p>
+
 <h2>Architecture</h2>
 <div class="card"><pre class="mermaid">flowchart TB
   user([&quot;User or agent developer&quot;])

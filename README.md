@@ -401,9 +401,13 @@ certification.
 
 The backend supports an optional judge using the open
 `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B` model (served by Nebius Token Factory).
-The deployed health endpoint reports the judge as configured, but readiness
-does not prove a successful live inference for every request. Do not claim a
-live inference demonstration unless a real request has been verified.
+On 2026-10-30, a harmless synthetic request to the deployed `/v1/intercept`
+endpoint completed successfully through Nebius Token Factory. The API returned
+a valid structured Nemotron result, and its audit trace recorded the model ID,
+an `ALLOW` verdict, approximately 1.44 seconds of judge latency, and no Gemini
+fallback. This confirms one live inference worked; it is not a benchmark,
+accuracy claim, or guarantee that every request or deployment instance will
+succeed. Provider errors fail closed.
 
 ## Run the tests
 
