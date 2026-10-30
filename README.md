@@ -10,6 +10,13 @@ TrustTrace sits at the execution boundary: every proposed tool call is
 inspected *before* it runs, and every verdict is written to a tamper-evident,
 signed ledger.**
 
+**▶ [Watch the demo video (2:47)](https://youtu.be/-rKbY6DDjQE)** ·
+**[Live dashboard](https://trust-trace-ai-jj13.vercel.app)** ·
+[API health](https://trust-trace-ai.vercel.app/health) ·
+Built with **NVIDIA Nemotron 3 Nano** on **Nebius Token Factory**
+
+[![TrustTrace AI demo video](docs/YouTube-thumbnail-v2.jpg)](https://youtu.be/-rKbY6DDjQE)
+
 | 8 scenarios | 5/5 attacks flagged (BLOCK/REVIEW) | 0/3 benign blocked | ~1 ms local policy latency (p50) |
 |---|---|---|---|
 
